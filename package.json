@@ -6,6 +6,6 @@
   "author": "Diego Krefta <diego.krefta@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "expresss": "^0.0.0"
+    "express": "^4.16.3"
   }
 }
