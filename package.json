@@ -1,5 +1,19 @@
 {
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "10.6.0",
+    "yarn": "1.7.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/dkrefta/fullstack-react-node.git",
+  "author": "Diego Krefta <diego.krefta@gmail.com>",
+  "license": "MIT",
   "dependencies": {
+    "express": "^4.16.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
   }
