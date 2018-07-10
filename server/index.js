@@ -1,6 +1,6 @@
 const express = require("express");
 const passport = require("passport");
-const GoogleStrategy = require("passport-google-oauth20");
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const keys = require("./config/keys");
 
 const app = express();
@@ -10,7 +10,7 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callBackURL: "/auth/google/callback"
+      callbackURL: "/auth/google/callback"
     },
     accessToken => {
       console.log(accessToken);
