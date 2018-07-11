@@ -7,14 +7,15 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "nodemon ./index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": "https://github.com/dkrefta/fullstack-react-node.git",
   "author": "Diego Krefta <diego.krefta@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
-    "nodemon": "^1.18.0",
+    "nodemon": "^1.18.1",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
   }
