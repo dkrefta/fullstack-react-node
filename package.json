@@ -2,18 +2,21 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "engine": {
+  "engines": {
     "node": "8.11.1",
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "cd client & yarn start",
+    "server": "nodemon server/index.js",
+    "client": "yarn start",
+    "dev": "concurrently \"yarn server \" \"yarn client \""
   },
   "repository": "https://github.com/dkrefta/fullstack-react-node.git",
   "author": "Diego Krefta <diego.krefta@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^3.6.0",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
     "heroku": "^7.6.1",
